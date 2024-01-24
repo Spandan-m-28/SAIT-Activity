@@ -1,0 +1,95 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("background.jpg");
+    background-size: cover;
+}
+
+.login-box {
+    height: 391px;
+    width: 420px;
+    border: 2px solid black;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    border-radius: 20px;
+    margin-left: -250px;
+    backdrop-filter: (5px);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.input{
+    height: 60px;
+    width: 80%;
+    color: rgb(0, 0, 0);
+    font-family:  "poppins", sans-serif;
+}
+
+#username {
+    margin-left: 40px;
+    margin-top: 40px;
+    height: 40px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+#password {
+    margin-left: 40px;
+    margin-top: 50px;
+    height: 40px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.User{
+    margin-top: 50px;
+}
+
+#forget-password {
+    margin-left: 90px;
+}
+
+#login-button {
+    height: 40px;
+    width: 300px;
+    margin-left: 60px;
+    margin-top: 50px;
+    border-radius: 20px;
+    border: 2px solid blue;
+    font-size: 20px;
+    background-color: blue;
+    color: white;
+}
+
+#login-button:hover {
+    color: blue;
+    background-color: white;
+}
+
+#pass-box {
+    margin-top: 20px;
+}
+
+.remember-me {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 3px;
+}
+
+.registerlink {
+    text-align: center;
+    margin-top: 10px;
+}
