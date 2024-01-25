@@ -34,9 +34,11 @@
     }
     main{
       display: flex;
-      /*flex-direction: column;*/
+      flex-direction: row;
+      justify-content: space-around;
       align-items: center;
       padding: 50px;
+      flex-wrap: wrap;
     }
     .dishbox{
       background-color: #ffdab9;
@@ -44,12 +46,14 @@
       border-radius: 10px;
       text-align: center;
       margin: 20px;
-      width: 40%;
+      width: 45%;
+      max-width: 400px;
       display: flex;
       flex-direction: column;
       align-items: center;
       transition: transform 0.3s ease-in-out;
       cursor: pointer;
+      overflow: hidden;
     }
     .dishbox:hover{
       transform: scale(1.05);
@@ -57,18 +61,21 @@
     .dish image{
       max-width: 100%;
       height: auto;
-      border-radius: 10px;
+      overflow: hidden;
+      border-radius: 50%;
       max-height: 150px;
       margin-bottom: 15px;
       transition: transform 0.3s ease-in-out;
     }
     .dishbox:hover .dishimage{
-      transform: scale(1.2);
+      transform: scale(1);
     }
     .dishdescription{
       color:#333;
       /*margin-top: 15px;*/
       font-size: 16px;
+      height: 80px;
+      overflow: hidden;
     }
   
   </style>
@@ -85,11 +92,13 @@
 <main>
   <div class="dishbox">
     <img src="https://www.cookwithmanali.com/wp-content/uploads/2018/05/Best-Pav-Bhaji-Recipe-500x500.jpg" alt="pav bhaji" class="dishimage">
-    <p class="dishdescription"> Delicious Pav Bhaji- A flavourful streetfood from mumbai <a href="@"  style="color: red;">Learn more</a></p>
+    <p class="dishdescription"> Delicious Pav Bhaji- A flavourful streetfood from mumbai 
+      <a href="@"  style="color: red;">Learn more</a></p>
   </div>
   <div class="dishbox">
-    <img src="https://www.yummytummyaarthi.com/wp-content/uploads/2015/07/1-46.jpg" alt="Kolhapuri chicken" class="dishimage">
-    <p class="dishdescription"> spicy kolhapuri chicken- a fiery dish from kolhapur, Maharashtra <a href="$" style="color: red;">Learn more</a></p>
+    <img src="https://2.wlimg.com/product_images/bc-full/2020/8/4526162/kolhapuri-chicken-masala-1598179214-5548090.jpeg" alt="Kolhapuri chicken" class="dishimage">
+    <p class="dishdescription"> spicy kolhapuri chicken- a fiery dish from kolhapur
+       <a href="$" style="color: red;">Learn more</a></p>
   </div>
 </main>
 
