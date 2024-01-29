@@ -2,26 +2,6 @@ body {
   margin: 0;
   background-color: #fffbf7;
 }
-
-nav {
-  color: white;
-  padding: 5px;
-  text-align: center;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 5px 10px;
-  font-size: medium;
-  border-radius: 5px;
-}
-
-nav a:hover {
-  background-color: #ff5252;
-  color: white;
-}
-
 h1 {
   color: white;
   font-family: arial, sans-serif;
@@ -128,6 +108,9 @@ ul > li::before {
 .card:hover {
   transform: scale(1.05);
 }
+.card:hover img{
+  filter:grayscale(0%);
+}
 
 @media screen and (max-width: 767px) {
   .card {
@@ -140,6 +123,7 @@ ul > li::before {
   height: auto;
   border-radius: 8px;
   margin-bottom: 10px;
+  filter:grayscale(100%);
 }
 .card h2 {
   color: #36454f;
